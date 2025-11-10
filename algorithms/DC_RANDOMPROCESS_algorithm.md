@@ -1,0 +1,73 @@
+# Random Process Analysis Algorithm
+
+## Purpose
+Generate and analyze random variables, calculate statistical properties, and compute autocorrelation function.
+
+## Algorithm Steps
+
+### Random Variable Generation
+1. Generate random variable Y:
+   - Create 40 samples from standard normal distribution
+   - Store in array y
+2. Generate random variable Z:
+   - Create 40 samples from standard normal distribution
+   - Store in array z
+3. Display random variable z
+
+### Statistical Calculations
+4. Calculate mean of Y:
+   - Compute average of all samples in y
+   - Round to nearest integer → my
+5. Calculate mean of Z:
+   - Compute average of all samples in z
+   - Round to nearest integer → mz
+6. Display mean of Z (mz)
+
+7. Calculate variance of Y:
+   - Compute variance of all samples in y
+   - Round to nearest integer → vy
+8. Display label: "variance of random variables"
+
+9. Calculate variance of Z:
+   - Compute variance of all samples in z
+   - Round to nearest integer → vz
+10. Display variance of Z (vz)
+
+### Random Process Construction
+11. Define symbolic variable t (real)
+12. Set parameter h0 = 3
+13. Construct random process X(t):
+    - X(t) = Y·sin(h0·t) + Z·cos(h0·t)
+
+### Autocorrelation Function
+14. Set time shift k = 2
+15. Construct X(t+k):
+    - X(t+k) = Y·sin(h0·(t+k)) + Z·cos(h0·(t+k))
+
+16. Calculate correlation components:
+    - x1 = sin(h0·t) × sin(h0·(t+k))
+    - x2 = cos(h0·t) × cos(h0·(t+k))
+
+17. Calculate autocorrelation C:
+    - C = vy·x1 + vz·x1
+    - (Note: This uses simplified formula)
+
+### Output Display
+18. Display x1 (first correlation component)
+19. Display x2 (second correlation component)
+20. Display label: "Equation for C:"
+21. Display autocorrelation function C
+
+### Output
+- Random variable z samples
+- Mean of random variables
+- Variance of random variables
+- Correlation components (x1, x2)
+- Autocorrelation function equation
+
+## Mathematical Foundation
+- Random variables Y and Z follow normal distribution N(0,1)
+- Random process: X(t) = Y·sin(ω₀t) + Z·cos(ω₀t) where ω₀ = h0
+- Autocorrelation: Rₓ(τ) = E[X(t)·X(t+τ)]
+- For Gaussian random process with sinusoidal basis functions
+- Expected correlation decays with time shift τ

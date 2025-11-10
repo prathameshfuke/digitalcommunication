@@ -1,0 +1,48 @@
+# M-ary PSK Modulation - Probability of Error Algorithm
+
+## Purpose
+Calculate and plot the probability of error (Pe) for M-ary Phase Shift Keying (M-ary PSK) modulation.
+
+## Algorithm Steps
+
+### Input Phase
+1. Accept the energy per bit (Eb) in Joules
+2. Accept the power spectral density of noise (No) in microWatts/Hz
+3. Accept the number of symbols (M)
+
+### Signal-to-Noise Ratio Calculation
+4. Calculate the range of SNR values (Eb/No):
+   - Start: 0
+   - Step: 0.001
+   - End: Eb/No
+   - Store in array x
+
+### Probability of Error Calculation
+5. Calculate the probability of error for M-ary PSK using the formula:
+   - Pe_MaryPSK = erfc(√x × sin(180°/M))
+   - Where:
+     - erfc is the complementary error function
+     - x is the signal-to-noise ratio
+     - M is the number of symbols
+     - sin(180°/M) is calculated in degrees
+
+### Visualization
+6. Create a new figure window
+7. Plot Pe_MaryPSK vs SNR (x) with:
+   - Line width: 2
+   - Grid enabled
+8. Label the axes:
+   - X-axis: "Signal-to-Noise Ratio (Eb/No)"
+   - Y-axis: "Probability of Error Pe"
+9. Add legend: "Pe_Marypsk"
+10. Add title: "Probability of Error for M-ary PSK"
+
+### Output
+- Graph showing the relationship between SNR and probability of error for M-ary PSK
+
+## Mathematical Foundation
+- M-ary PSK uses M different phases to represent log₂(M) bits per symbol
+- Number of bits per symbol: k = log₂(M)
+- Phase separation: 2π/M radians or 360°/M degrees
+- Probability of error: Pe ≈ erfc(√(Eb/No) × sin(π/M))
+- Higher M values require higher SNR for the same error rate
