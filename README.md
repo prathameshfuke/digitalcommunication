@@ -43,13 +43,13 @@ This repository contains MATLAB implementations of various digital communication
 
 Detailed algorithms for each implementation are available in the `algorithms/` folder:
 
-- [Cyclic Codes Algorithm](algorithms/cyclic_codes_algorithm.md)
-- [BPSK Algorithm](algorithms/DC_BPSK_algorithm.md)
-- [M-ary PSK Algorithm](algorithms/DC_MaryPSK_algorithm.md)
-- [M-ary QAM Algorithm](algorithms/DC_MQAM_algorithm.md)
-- [Random Process Algorithm](algorithms/DC_RANDOMPROCESS_algorithm.md)
-- [Linear Block Code Algorithm](algorithms/linear_block_code_algorithm.md)
-- [Source Coding Algorithm](algorithms/source_coding_algorithm.md)
+- [Cyclic Codes Algorithm](algorithms/cyclic_codes_algorithm.txt)
+- [BPSK Algorithm](algorithms/DC_BPSK_algorithm.txt)
+- [M-ary PSK Algorithm](algorithms/DC_MaryPSK_algorithm.txt)
+- [M-ary QAM Algorithm](algorithms/DC_MQAM_algorithm.txt)
+- [Random Process Algorithm](algorithms/DC_RANDOMPROCESS_algorithm.txt)
+- [Linear Block Code Algorithm](algorithms/linear_block_code_algorithm.txt)
+- [Source Coding Algorithm](algorithms/source_coding_algorithm.txt)
 
 ## 🚀 Getting Started
 

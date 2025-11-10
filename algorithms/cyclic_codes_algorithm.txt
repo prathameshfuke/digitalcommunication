@@ -1,16 +1,16 @@
-# Cyclic Codes Algorithm
+CYCLIC CODES ALGORITHM
 
-## Purpose
+PURPOSE:
 Encode and decode messages using cyclic codes.
 
-## Algorithm Steps
+ALGORITHM STEPS:
 
-### Input Phase
+Input Phase:
 1. Accept the number of message bits (k)
 2. Accept the number of code bits (n)
 3. Accept the message word (m)
 
-### Generator Polynomial Generation
+Generator Polynomial Generation:
 4. Generate the generator polynomial G(x) for cyclic code using:
    - Code length: n
    - Message length: k
@@ -18,26 +18,26 @@ Encode and decode messages using cyclic codes.
 5. Convert polynomial to symbolic form
 6. Display the generator polynomial G(x)
 
-### Encoding Process
+Encoding Process:
 7. Encode the message using cyclic encoding:
    - Input: message (m)
    - Code parameters: n, k
    - Generator polynomial: G
 8. Display the encoded codeword
 
-### Decoding Process
+Decoding Process:
 9. Decode the received codeword using cyclic decoding:
    - Input: encoded codeword
    - Code parameters: n, k
    - Generator polynomial: G
 10. Display the decoded message word
 
-### Output
+OUTPUT:
 - Generator polynomial G(x)
 - Encoded codeword
 - Decoded message word
 
-## Mathematical Foundation
+MATHEMATICAL FOUNDATION:
 - Cyclic codes are linear block codes where cyclic shifts of codewords are also codewords
 - Generator polynomial G(x) divides x^n + 1
 - Encoding: C(x) = M(x) · G(x)

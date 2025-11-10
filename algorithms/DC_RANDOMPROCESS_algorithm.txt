@@ -1,11 +1,11 @@
-# Random Process Analysis Algorithm
+RANDOM PROCESS ANALYSIS ALGORITHM
 
-## Purpose
+PURPOSE:
 Generate and analyze random variables, calculate statistical properties, and compute autocorrelation function.
 
-## Algorithm Steps
+ALGORITHM STEPS:
 
-### Random Variable Generation
+Random Variable Generation:
 1. Generate random variable Y:
    - Create 40 samples from standard normal distribution
    - Store in array y
@@ -14,7 +14,7 @@ Generate and analyze random variables, calculate statistical properties, and com
    - Store in array z
 3. Display random variable z
 
-### Statistical Calculations
+Statistical Calculations:
 4. Calculate mean of Y:
    - Compute average of all samples in y
    - Round to nearest integer → my
@@ -33,13 +33,13 @@ Generate and analyze random variables, calculate statistical properties, and com
    - Round to nearest integer → vz
 10. Display variance of Z (vz)
 
-### Random Process Construction
+Random Process Construction:
 11. Define symbolic variable t (real)
 12. Set parameter h0 = 3
 13. Construct random process X(t):
     - X(t) = Y·sin(h0·t) + Z·cos(h0·t)
 
-### Autocorrelation Function
+Autocorrelation Function:
 14. Set time shift k = 2
 15. Construct X(t+k):
     - X(t+k) = Y·sin(h0·(t+k)) + Z·cos(h0·(t+k))
@@ -52,20 +52,20 @@ Generate and analyze random variables, calculate statistical properties, and com
     - C = vy·x1 + vz·x1
     - (Note: This uses simplified formula)
 
-### Output Display
+Output Display:
 18. Display x1 (first correlation component)
 19. Display x2 (second correlation component)
 20. Display label: "Equation for C:"
 21. Display autocorrelation function C
 
-### Output
+OUTPUT:
 - Random variable z samples
 - Mean of random variables
 - Variance of random variables
 - Correlation components (x1, x2)
 - Autocorrelation function equation
 
-## Mathematical Foundation
+MATHEMATICAL FOUNDATION:
 - Random variables Y and Z follow normal distribution N(0,1)
 - Random process: X(t) = Y·sin(ω₀t) + Z·cos(ω₀t) where ω₀ = h0
 - Autocorrelation: Rₓ(τ) = E[X(t)·X(t+τ)]
