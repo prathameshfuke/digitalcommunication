@@ -1,3 +1,12 @@
+% ALGORITHM:
+% 1. Input: message length (k), codeword length (n), parity matrix (P)
+% 2. Form generator matrix: G = [I_k | P]
+% 3. Encode message: C = m * G
+% 4. Form parity check matrix: H = [P' | I_(n-k)]
+% 5. Generate syndrome table for error patterns
+% 6. Input received codeword R and calculate syndrome: S = R * H'
+% 7. If S=0: Valid codeword; Else: Detect and correct error using syndrome table
+
 % Input parameters
 k = input('Enter the length of Message Word: ');
 n = input('Enter the length of Codeword: ');

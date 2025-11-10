@@ -1,3 +1,9 @@
+% ALGORITHM:
+% 1. Input: Energy per bit (Eb) and Noise PSD (No)
+% 2. Calculate SNR range: x = 0 to Eb/No
+% 3. Compute probability of error: Pe = 0.5 * erfc(sqrt(x))
+% 4. Plot Pe vs SNR graph
+
 % Input parameters
 Eb = input('Enter the Energy per bit in Joules: ');
 No = input('Enter the PSD of Noise in microWatts/Hz: ');

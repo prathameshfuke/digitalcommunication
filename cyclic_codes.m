@@ -1,3 +1,10 @@
+% ALGORITHM:
+% 1. Input: message bits (k), code bits (n), message word (m)
+% 2. Generate generator polynomial G(x) using cyclpoly()
+% 3. Encode message using cyclic encoding
+% 4. Decode codeword to retrieve original message
+% 5. Display generator polynomial, encoded codeword, and decoded message
+
 % Input parameters
 k = input('Enter the number of message bits (k): ');
 n = input('Enter the number of code bits (n): ');

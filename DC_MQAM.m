@@ -1,3 +1,9 @@
+% ALGORITHM:
+% 1. Input: Energy per bit (Eb), Noise PSD (No), number of symbols (M)
+% 2. Calculate SNR range: x = 0 to Eb/No
+% 3. Compute Pe for QAM: Pe = 0.5 * erfc(sqrt(0.4 * x))
+% 4. Plot Pe vs SNR graph
+
 % User inputs
 Eb = input('Enter the Energy per bit in Joules: ');
 No = input('Enter the PSD of Noise in micro Watts/Hz: ');

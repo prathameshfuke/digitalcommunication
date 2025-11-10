@@ -1,3 +1,10 @@
+% ALGORITHM:
+% 1. Generate random variables Y and Z (40 samples each from normal distribution)
+% 2. Calculate mean and variance of Y and Z
+% 3. Construct random process: X(t) = Y*sin(h0*t) + Z*cos(h0*t)
+% 4. Calculate autocorrelation components for time shift k
+% 5. Compute and display correlation equation C
+
 y = randn([1 40]);
 my = round(mean(y));
 z = randn([1 40]);

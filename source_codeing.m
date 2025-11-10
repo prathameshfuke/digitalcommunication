@@ -1,3 +1,12 @@
+% ALGORITHM:
+% 1. Input: number of symbols (x), symbols array, probabilities array
+% 2. Generate Huffman dictionary using huffmandict()
+% 3. Encode symbols using Huffman codes
+% 4. Decode to verify correctness
+% 5. Calculate entropy: H(X) = -Σ p(i) * log2(p(i))
+% 6. Calculate efficiency: η = H(X) / L_avg * 100%
+% 7. Display dictionary, encoded sequence, entropy, and efficiency
+
 % Input the symbols and their probabilities
 x = input('Enter number of symbols: ');
 symbols = zeros(1, x);
